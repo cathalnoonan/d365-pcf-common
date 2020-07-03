@@ -1,0 +1,87 @@
+body, body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #f4f4f4; */
+}
+body {
+    overflow-y: scroll;
+}
+.main {
+    width: 90%;
+    margin: auto;
+}
+
+/* SM */ @media screen and (min-width: 24em) {
+    .main {
+        max-width: 36em;
+    }
+}
+/* MD */ @media screen and (min-width: 36em) {
+    .main {
+        max-width: 48em;
+    }
+}
+/* LG */ @media screen and (min-width: 48em) {
+    .main {
+        max-width: 60em;
+    }
+}
+/* XL */ @media screen and (min-width: 60em) {
+    .main {
+        max-width: 72em;
+    }
+}
+
+nav {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+nav .logo {
+    flex-grow: 1;
+}
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-links li {
+    outline: none;
+    user-select: none;
+    display: inline-block;
+    padding: 7px 8px;
+    border: 1px solid rgb(116, 39, 116);
+    
+}
+.nav-links li.active {
+    border-color: rgb(116, 39, 116);   
+    background-color: rgb(116, 39, 116); 
+    color: white;
+}
+.nav-links li:hover {
+    border-color: rgb(78, 26, 78);   
+    background-color: rgb(78, 26, 78); 
+    color: white;
+}
+.nav-links li:not(:last-child) {
+    margin-right: 16px;
+}
+
+hr {
+    margin-bottom: 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+p {
+    margin-bottom: 0.5em;
+}
+
+.img {
+    max-width: 100%;
+}
